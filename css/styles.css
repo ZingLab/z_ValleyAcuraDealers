@@ -159,7 +159,7 @@ h3, h4, h5, h6 {
 }
 
 section {
-    padding: 60px 0;
+    padding: 0;
 }
 
 .section-title {
@@ -542,3 +542,148 @@ section {
         width: 1170px;
     }
 }
+
+
+/* New styles for the article */
+
+    .acura-insider-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    
+    .insider-header {
+        text-align: center;
+        margin-bottom: 40px;
+        border-bottom: 2px solid #e8e8e8;
+        padding-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+        color: #777;
+        font-style: italic;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        color: #c00;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    
+    .intro-section {
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+        border-left: 4px solid #c00;
+        padding-left: 20px;
+        background-color: #f9f9f9;
+        padding: 20px 20px 20px 30px;
+    }
+    
+    .story-section {
+        display: block;
+        margin-bottom: 10px;
+    }    
+  .story-section .story-image-link {
+    display: block;
+    float: right;
+    margin: 0 10px;
+  }
+
+    .story-image {
+        flex: 0 0 300px;
+        height: 300px;
+        object-fit: cover;
+        border: 1px solid #e8e8e8;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .story-section.reverse .story-image {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    
+    .story-content {
+        flex: 1;
+        min-width: 300px;
+        display: inline;
+    }
+    
+    .story-content p {
+        margin-bottom: 8px;
+    }
+    
+    a {
+        color: #c00;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #900;
+        text-decoration: underline;
+    }
+    
+    .why-upgrade-section {
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    
+    .why-upgrade-section ul {
+        margin-bottom: 20px;
+    }
+    
+    .why-upgrade-section li {
+        margin-bottom: 10px;
+    }
+    
+    .explore-more-section {
+        text-align: center;
+        padding: 20px;
+        border-top: 2px solid #e8e8e8;
+        margin-top: 50px;
+    }
+    
+    .explore-more-section p {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    @media (max-width: 768px) {
+        .story-section, .story-section.reverse {
+            flex-direction: column;
+        }
+        
+        .story-image, .story-section.reverse .story-image {
+            margin: 0 auto 20px auto;
+            width: 200px;
+            height: auto;
+            max-height: 200px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    
